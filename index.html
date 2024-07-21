@@ -49,9 +49,16 @@
                 cursor: pointer;
                 outline: inherit;
             }
+
+            @media (min-width: 992px) {
+                .certificates-section {
+                margin-left: 25rem;
+                margin-right: 25rem;
+            }
+            }
         </style>
     </head>
-    <body id="page-top">
+    <body class="bg-light" id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -129,7 +136,7 @@
             </div>
         </section>
         <!-- Projects-->
-        <section class="content-section" id="portfolio">
+        <section class="content-section bg-light" id="portfolio">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center mt-4">
                     <h2 class="mb-5">Selected Projects</h2>
@@ -184,55 +191,57 @@
         </section>
         <!-- Certificates -->
          
-         <section class="certificates-section row" id="certificates">
-            <div class="content-section-heading text-center mt-4">
-                <h2 class="mb-5">Certificates</h2>
+         <section class="bg-light" id="certificates">
+            <div class="certificates-section row">
+                <div class="content-section-heading text-center mt-4">
+                    <h2 class="mb-5">Certificates</h2>
+                </div>
+                <div id="accordion">
+                    <div class="card">
+                      <div class="text-center card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn-certificate" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Basic Level of Software Engineering by DICT
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-certificate card-body">
+                            <img class="certificate" src="assets/certificates/1.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="text-center card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn-certificate collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Principles of Web Development and Introduction to HTML by DICT
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-certificate card-body">
+                          <img class=" img-fluid certificate" src="assets/certificates/2.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="text-center card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn-certificate collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Programming for Beginners Using Python by DICT
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-certificate card-body">
+                            <img class="certificate" src="assets/certificates/3.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
-            <div id="accordion">
-                <div class="card">
-                  <div class="text-center card-header" id="headingOne">
-                    <h5 class="mb-0">
-                      <button class="btn-certificate" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Basic Level of Software Engineering by DICT
-                      </button>
-                    </h5>
-                  </div>
-              
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-certificate card-body">
-                        <img class="certificate" src="assets/certificates/1.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="text-center card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button class="btn-certificate collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Principles of Web Development and Introduction to HTML by DICT
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-certificate card-body">
-                      <img class=" img-fluid certificate" src="assets/certificates/2.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="text-center card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn-certificate collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Programming for Beginners Using Python by DICT
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-certificate card-body">
-                        <img class="certificate" src="assets/certificates/3.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
          </section>
         <!-- Signup -->
         <section class="signup-section bg-light" id="signup">
