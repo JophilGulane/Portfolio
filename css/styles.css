@@ -4278,7 +4278,7 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-  color: var(--bs-card-color);
+  color: var(--bs-5E004C-color);
 }
 
 .card-title {
@@ -10989,8 +10989,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #C988C8;
+  border: 1px solid #C988C8;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11001,7 +11001,7 @@ body {
   padding: 0.9rem 0;
 }
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(#fff, 80%);
+  color: fade(#C988C8, 80%);
   outline: none;
   background-color: transparent;
 }
@@ -11027,7 +11027,7 @@ body {
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: #C988C8;
   }
   #mainNav .nav-link:active {
     color: #fff;
@@ -11044,15 +11044,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #C988C8;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #C988C8;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #C988C8;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #911489;
   }
 }
 
@@ -11145,8 +11145,8 @@ body {
 }
 
 .signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+  padding: 5rem 0;
+  background-color: white;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11164,11 +11164,11 @@ body {
 }
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #5E004C;
 }
 .contact-section .card h4, .contact-section .card .h4 {
   font-size: 0.8rem;
@@ -11178,7 +11178,7 @@ body {
 }
 .contact-section .card hr {
   opacity: 1;
-  border-color: #64a19d;
+  border-color: #C988C8;
   border-width: 0.25rem;
   width: 3rem;
 }
