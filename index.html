@@ -56,10 +56,6 @@
 
             }
             }
-            .about-img {
-                border: solid;
-                border-color: #8110c7;
-            }
 
             .pixelify-sans {
             font-family: "Pixelify Sans", sans-serif;
@@ -323,13 +319,14 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form class="form-signup" id="contactForm" action="https://formspree.io/f/mwpevqqb" method="POST">
                             <!-- Email address input-->
                             <div class="col input-group-newsletter">
-                                <div class="col mx-2 mt-4 mb-4"><input class="form-control" id="userName" type="text" placeholder="Enter name..." aria-label="Enter name..."/></div>
-                                <div class="col mx-2 mt-4 mb-4"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col mx-2 mt-4 mb-4"><input class="form-control" id="userMessage" type="text" placeholder="Enter message..." aria-label="Enter Message..."/></div>
-                                <div class="col-auto mt-4"><button class="btn text-white-50 btn-dev disabled" id="submitButton" type="submit">Send!</button></div>
+                                <div class="col mx-2 mt-4 mb-4"><input name="username" class="form-control" id="userName" type="text" placeholder="Enter name..." aria-label="Enter name..." required/></div>
+                                <div class="col mx-2 mt-4 mb-4"><input name="email" class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." required/></div>
+                                <div class="col mx-2 mt-4 mb-4"><input name="message" class="form-control" id="userMessage" type="text" placeholder="Enter message..." aria-label="Enter Message..." required/></div>
+                                <input type="hidden" name="_next" value="https://jophilgulane.github.io/Portfolio/#signup" />
+                                <div class="col-auto mt-4"><button onclick="submitForm()" class="btn text-white-50 btn-dev" id="submitButton" type="submit">Send!</button></div>
                             </div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
@@ -347,6 +344,16 @@
                             <!-- This is what your users will see when there is-->
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                            <script>
+                                function submitForm() {
+                                    var contactform = document.getElementById("contactform");
+                                    contactform.submit();
+                                    contactsform.reset();
+                                    window.location.reload();
+                                }
+
+                                var contactform = document.getElementById("submitSuccessMessage");
+                            </script>
                         </form>
                     </div>
                 </div>
@@ -387,7 +394,7 @@
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50">
             <div class="container-fluid px-4 px-lg-5">
-                    Copyright &copy; DevJophil 2023
+                    Copyright &copy; DevJophil 2024
             </div>
         </footer>
         <!-- Bootstrap core JS-->
