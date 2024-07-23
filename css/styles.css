@@ -11033,7 +11033,6 @@ body {
   }
   #mainNav .nav-link:hover {
     color: #911489;
-    border-bottom: 0.25rem solid #911489;
   }
   #mainNav .nav-link:active {
     color: #911489;
@@ -11056,7 +11055,6 @@ body {
   }
   #mainNav.navbar-shrink .nav-link:hover {
     color: #911489;
-    border-bottom: 0.25rem solid #911489;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #911489;

@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>DevJophil</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+        <link rel="icon" type="image/x-icon" href="assets/img/website-icon.ico"/>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -23,11 +23,6 @@
 
             .fab {
                 color: black;
-            }
-
-            .certificates-section {
-                margin-left: 5rem;
-                margin-right: 5rem;
             }
 
             .certificate {
@@ -51,15 +46,16 @@
             }
 
             @media (min-width: 1100px) {
-                .certificates-section {
-                margin-left: 10rem;
-                margin-right: 10rem;
-            }
 
             .certificate {
                 width: 500px;
                 height: auto;
 
+            }
+
+            .about-img{
+                border: solid;
+                border-color: #8110c7;
             }
             }
 
@@ -76,7 +72,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
@@ -105,11 +100,11 @@
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
+                    <div class="about-img col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/about-1.png" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                            <h4>About Me</h4>
+                            <p class="text-black-50 mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis non aliquid quas, veniam commodi maxime, nulla est et sapiente eaque architecto ducimus, optio voluptatem blanditiis repellendus nihil suscipit sequi accusamus.</p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +115,7 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
+                                    <h4 class="text-white">Text</h4>
                                     <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
                                 </div>
                             </div>
@@ -154,53 +149,18 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Stationary</div>
-                                    <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                                    <div class="h2">RPG GAME</div>
+                                    <p class="mb-0">A simple RPG game made with godot engine!</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/projects/project-1.png" alt="..." />
                         </a>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Ice Cream</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                   
         <!-- Certificates -->
          
          <section class="bg-light" id="certificates">
-            <div class="certificates-section row">
+            <div class="container row">
                 <div class="content-section-heading text-center mt-4">
                     <h2 class="mb-5">Certificates</h2>
                 </div>
@@ -209,11 +169,11 @@
                       <div class="text-center card-header" id="headingOne">
                         <h5 class="mb-0">
                           <button class="btn-certificate" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Basic Level of Software Engineering by DICT
+                            Intermediate Level of Software Engineering by DICT
                           </button>
                         </h5>
                       </div>
-                  
+                      
                       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-certificate card-body">
                             <img class="certificate" src="assets/certificates/1.jpg" alt="">
@@ -224,7 +184,7 @@
                       <div class="text-center card-header" id="headingTwo">
                         <h5 class="mb-0">
                           <button class="btn-certificate collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Principles of Web Development and Introduction to HTML by DICT
+                            Digital Innovation in Government
                           </button>
                         </h5>
                       </div>
@@ -238,7 +198,7 @@
                       <div class="text-center card-header" id="headingThree">
                         <h5 class="mb-0">
                           <button class="btn-certificate collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Programming for Beginners Using Python by DICT
+                            Introduction to Android Application Developement
                           </button>
                         </h5>
                       </div>
@@ -248,6 +208,62 @@
                         </div>
                       </div>
                     </div>
+                    <div class="card">
+                        <div class="text-center card-header" id="headingFour">
+                          <h5 class="mb-0">
+                            <button class="btn-certificate collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Basic Level of Software Engineering
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                          <div class="card-certificate card-body">
+                            <img class=" img-fluid certificate" src="assets/certificates/4.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="text-center card-header" id="headingFive">
+                          <h5 class="mb-0">
+                            <button class="btn-certificate collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              Principles of Design
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                          <div class="card-certificate card-body">
+                            <img class=" img-fluid certificate" src="assets/certificates/5.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="text-center card-header" id="headingSix">
+                          <h5 class="mb-0">
+                            <button class="btn-certificate collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              Principles of Web Development and Introduction to HTML by DICT
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                          <div class="card-certificate card-body">
+                            <img class=" img-fluid certificate" src="assets/certificates/6.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="text-center card-header" id="headingSeven">
+                          <h5 class="mb-0">
+                            <button class="btn-certificate collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                              Programming for Beginners Using Python 
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                          <div class="card-certificate card-body">
+                            <img class=" img-fluid certificate" src="assets/certificates/7.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
                   </div>
             </div>
          </section>
@@ -330,7 +346,11 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; DevJophil 2023</div></footer>
+        <footer class="footer bg-black small text-center text-white-50">
+            <div class="container-fluid px-4 px-lg-5">
+                    Copyright &copy; DevJophil 2023
+            </div>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
