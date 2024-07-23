@@ -50,13 +50,12 @@
             }
 
             @media (min-width: 1100px) {
-
             .certificate {
                 width: 500px;
                 height: auto;
 
             }
-
+            }
             .about-img {
                 border: solid;
                 border-color: #8110c7;
@@ -74,6 +73,13 @@
                 margin-bottom: 5rem;
             }
 
+            @media (min-width: 370) {
+                .signup-box {
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+            }
+            }
+
             .about-me {
                 margin-bottom: 10rem;
             }
@@ -81,8 +87,17 @@
             .about-me-content {
                 margin-top: 6rem;
             }
+            
+            .btn-dev, .btn-dev-home {
+                margin-top: 50px;
+                color: #ffffff; 
+                background-color: #330D4A;
 
-        }
+            }
+
+            .btn-dev-home {
+                margin-top: 50px;
+            }
 
         </style>
     </head>
@@ -111,10 +126,10 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         
-                        <h3 style="margin-top: 150px;" class="text-white-50 mx-auto mb-2">Hi👋, my name is</h3>
+                        <h3 class="text-white-50 mx-auto mb-2">Hi👋, my name is</h3>
                         <h1 class="text-white-50 mx-auto mt-2 mb-2">Jophil Gulane</h1>
                         <h3 class="text-white-50 mx-auto mt-2 mb-4">I'm a Software Engineer and a Web Developer</h3>
-                        <a style="margin-top: 100px; color: #ffffff; background-color: #330D4A;" class="btn" href="#about">Get In Touch</a>
+                        <a class="btn btn-dev-home text-white-50" href="#about">Get In Touch</a>
                     </div>
                 </div>
             </div>
@@ -314,7 +329,7 @@
                                 <div class="col mx-2 mt-4 mb-4"><input class="form-control" id="userName" type="text" placeholder="Enter name..." aria-label="Enter name..."/></div>
                                 <div class="col mx-2 mt-4 mb-4"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
                                 <div class="col mx-2 mt-4 mb-4"><input class="form-control" id="userMessage" type="text" placeholder="Enter message..." aria-label="Enter Message..."/></div>
-                                <div style="padding-top: 50px;" class="col-auto mt-4"><button class="btn btn-warning disabled" id="submitButton" type="submit">Send!</button></div>
+                                <div class="col-auto mt-4"><button class="btn text-white-50 btn-dev disabled" id="submitButton" type="submit">Send!</button></div>
                             </div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
                             <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
@@ -324,10 +339,7 @@
                             <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    <div class="fw-bolder">Form submission is currently not available</div>
                                 </div>
                             </div>
                             <!-- Submit error message-->
@@ -366,9 +378,9 @@
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                    <a class="mx-2" target="_blank" href="https://www.linkedin.com/in/jophil-gulane-b68b40288/"><i class="fab fa-linkedin"></i></a>
+                    <a class="mx-2" target="_blank" href="https://www.facebook.com/jophil.gulane/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" target="_blank" href="https://github.com/JophilGulane"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </section>
